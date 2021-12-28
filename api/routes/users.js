@@ -47,7 +47,7 @@ router.delete("/:id", async(req, res) => {
     } 
 )
 
-//GET USER
+//GET USER --postman error
 router.get(":id", async (req, res) => {
     try{
         const user = await User.findById(req.params.id);
